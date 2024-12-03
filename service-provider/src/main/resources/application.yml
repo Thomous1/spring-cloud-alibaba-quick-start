@@ -1,0 +1,13 @@
+server:
+  port: 9093
+  servlet:
+    context-path: /provider
+  http2:
+    enabled: true
+spring:
+  application:
+    name: service-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://localhost:8848

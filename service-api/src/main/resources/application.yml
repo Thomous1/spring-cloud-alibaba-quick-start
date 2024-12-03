@@ -1,0 +1,18 @@
+server:
+  port: 9091
+  servlet:
+    context-path: /api
+spring:
+  application:
+    name: service-api
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://localhost:8848
+    openfeign:
+      httpclient:
+        enabled: false
+        ok-http:
+          read-timeout: 1s
+      okhttp:
+        enabled: true

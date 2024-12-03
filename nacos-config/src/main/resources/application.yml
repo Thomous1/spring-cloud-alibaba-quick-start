@@ -1,0 +1,18 @@
+server:
+  port: 9090
+spring:
+  profiles:
+    active: test
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://localhost:8848
+      config:
+        server-addr: http://localhost:8848
+        file-extension: yaml
+        namespace: a22faa08-07be-4d15-833c-969b4b581317
+  application:
+    name: nacos-config
+
+  config:
+    import: "nacos:${spring.application.name}-${spring.profiles.active}.yaml"
