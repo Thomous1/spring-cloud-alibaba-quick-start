@@ -13,6 +13,7 @@
         <module>nacos-config</module>
         <module>service-api</module>
         <module>service-provider</module>
+        <module>cloud-gateway</module>
     </modules>
     <properties>
         <java.version>1.8</java.version>

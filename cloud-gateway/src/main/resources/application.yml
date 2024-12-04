@@ -1,0 +1,31 @@
+server:
+  port: 9094
+spring:
+  application:
+    name: cloud-gateway
+  main:
+    web-application-type: reactive
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://localhost:8848
+
+    sentinel:
+      transport:
+        dashboard: http://localhost:8080
+        clientIp: 127.0.0.1  #ip不通 指定客户端ip为127.0.01 TODO
+        port: 8720
+      eager: true
+
+    gateway:
+      routes:
+        - id: service-api
+          uri: http://localhost:9091
+          #TODO uri: lb://service-api ip地址不通。待解决
+          predicates:
+            - Path=/api/**
+        - id: service-provider
+          uri: http://localhost:9093
+          predicates:
+            - Path=/provider/**
