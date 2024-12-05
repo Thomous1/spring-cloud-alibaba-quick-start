@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <!-- 数据库连接的信息 -->
+    <context id="Mysql" targetRuntime="MyBatis3Simple">
+        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/cloud"
+                        userId="root"
+                        password="">
+        </jdbcConnection>
+
+        <!-- 类型转换 -->
+        <javaTypeResolver >
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+
+        <!-- 实体类的配置 -->
+        <javaModelGenerator targetPackage="org.wangxiaolang.serviceprovider.entity" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+
+        <!-- Mapper XML 文件的配置 -->
+        <sqlMapGenerator targetPackage="mapper"  targetProject="src/main/resources">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+
+        <!-- Mapper 接口的配置 -->
+        <javaClientGenerator type="XMLMAPPER" targetPackage="org.wangxiaolang.serviceprovider.mapper"  targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
+
+        <!-- 指定需要生成的表 -->
+        <table tableName="users" domainObjectName="usersDO">
+
+            <!-- 可以指定生成的列、忽略某些列等 -->
+        </table>
+
+        <!-- 更多的表 -->
+    </context>
+</generatorConfiguration>

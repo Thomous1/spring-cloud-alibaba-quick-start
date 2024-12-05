@@ -11,3 +11,18 @@ spring:
     nacos:
       discovery:
         server-addr: http://localhost:8848
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/cloud?useSSL=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath*:/mapper/*.xml
+  typeAliasesPackage: org.wangxiaolang.serviceprovider.entity
