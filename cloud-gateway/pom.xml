@@ -86,7 +86,6 @@
             <artifactId>sa-token-spring-aop</artifactId>
             <version>1.37.0</version>
         </dependency>
-
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-pool2</artifactId>
