@@ -1,21 +1,16 @@
-package com.creditease.microloan.users.black.common;
+package org.wangxiaolang.common;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+
 
 import java.io.Serializable;
 
-@ApiModel(description = "返回信息")
 public class R<T> implements Serializable {
 
     public R() {}
     private static final long serialVersionUID = 1L;
 
-    @ApiModelProperty(value = "状态码", required = true, example = "0000")
     private String status;
-    @ApiModelProperty(value = "返回消息", required = true, example = "操作成功")
     private String msg;
-    @ApiModelProperty(value = "业务数据")
     private T data;
 
 

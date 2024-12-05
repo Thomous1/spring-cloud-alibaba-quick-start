@@ -13,7 +13,7 @@ import org.wangxiaolang.common.R;
 import org.wangxiaolang.dto.User;
 import org.wangxiaolang.serviceprovider.entity.UsersDO;
 import org.wangxiaolang.serviceprovider.service.UsersService;
-import util.Assert;
+import org.wangxiaolang.serviceprovider.util.Assert;
 
 import java.util.List;
 

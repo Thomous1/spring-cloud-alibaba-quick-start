@@ -12,7 +12,7 @@ import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
 
 /**
- * @description:
+ * @description: 记录gateway 请求记录
  * @author: zuoyuwang
  * @create: 2024年12月04日 14:26
  **/

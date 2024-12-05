@@ -16,3 +16,4 @@ spring:
           read-timeout: 1s
       okhttp:
         enabled: true
+

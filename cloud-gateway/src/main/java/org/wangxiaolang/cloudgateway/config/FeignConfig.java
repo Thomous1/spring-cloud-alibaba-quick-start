@@ -1,4 +1,4 @@
-package org.wangxiaolang.api.config;
+package org.wangxiaolang.cloudgateway.config;
 
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;

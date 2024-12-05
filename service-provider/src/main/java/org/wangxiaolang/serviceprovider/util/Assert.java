@@ -1,4 +1,4 @@
-package util;
+package org.wangxiaolang.serviceprovider.util;
 
 import com.baomidou.mybatisplus.core.toolkit.ArrayUtils;
 import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
