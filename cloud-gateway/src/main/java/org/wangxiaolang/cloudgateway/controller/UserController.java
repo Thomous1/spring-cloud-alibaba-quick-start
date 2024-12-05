@@ -1,5 +1,6 @@
 package org.wangxiaolang.cloudgateway.controller;
 
+import cn.dev33.satoken.annotation.SaCheckPermission;
 import cn.dev33.satoken.stp.SaTokenInfo;
 import cn.dev33.satoken.stp.StpUtil;
 import cn.dev33.satoken.util.SaResult;
@@ -20,7 +21,7 @@ import java.util.Objects;
 
 @RestController
 @RequestMapping("/user")
-public class AuthController {
+public class UserController {
 
     @Autowired
     private ServiceProviderClient serviceProviderClient;
@@ -58,5 +59,29 @@ public class AuthController {
         return SaResult.data(Objects.nonNull(result)?"已经登陆！":"未登陆或者token失效！");
     }
 
+    @PostMapping("/add")
+    public R addUser(@RequestBody User user) {
+        // api方式
+        boolean b = StpUtil.hasPermission("user:add");
+        return b ? R.success() : R.fail("1000000", "没有权限");
+    }
 
+    // 注解方式
+    @PostMapping("/del")
+    @SaCheckPermission("user:del")
+    public R delUser(@RequestBody User user) {
+        return R.success();
+    }
+
+    @PostMapping("/list")
+    @SaCheckPermission("user:list")
+    public R listUser(@RequestBody User user) {
+        return R.success();
+    }
+
+    @PostMapping("/update")
+    @SaCheckPermission("user:update")
+    public R updateUser(@RequestBody User user) {
+        return R.success();
+    }
 }

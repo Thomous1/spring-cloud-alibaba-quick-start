@@ -9,6 +9,8 @@ import cn.dev33.satoken.router.SaRouter;
 import cn.dev33.satoken.stp.StpUtil;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.Ordered;
+import org.springframework.core.annotation.Order;
 import org.springframework.http.HttpHeaders;
 import org.springframework.web.server.ServerWebExchange;
 
@@ -27,6 +29,7 @@ public class SaTokenConfig {
      * 注册Sa-Token全局过滤器
      */
     @Bean
+    @Order(Ordered.HIGHEST_PRECEDENCE)
     public SaReactorFilter getSaReactorFilter(IgnoreUrlsConfig ignoreUrlsConfig) {
         return new SaReactorFilter()
                 // 拦截地址
@@ -35,7 +38,7 @@ public class SaTokenConfig {
                 .setExcludeList(ignoreUrlsConfig.getUrls())
                 // 鉴权方法：每次访问进入
                 .setAuth(obj -> {
-                    System.out.println("-------- 前端访问path：" + SaHolder.getRequest().getRequestPath());
+                    System.out.println("-------- 访问path：" + SaHolder.getRequest().getRequestPath());
                     // 权限认证 -- 不同模块, 校验不同权限
                    SaRouter.match("/api/**", r -> StpUtil.checkLogin());
                    SaRouter.match("/provider/**", r -> StpUtil.checkLogin());

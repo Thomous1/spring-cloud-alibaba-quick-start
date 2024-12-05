@@ -33,8 +33,7 @@
         </javaClientGenerator>
 
         <!-- 指定需要生成的表 -->
-        <table tableName="users" domainObjectName="usersDO">
-
+        <table tableName="role_permissions" domainObjectName="RolePermissions">
             <!-- 可以指定生成的列、忽略某些列等 -->
         </table>
 
