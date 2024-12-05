@@ -16,7 +16,6 @@ import java.util.stream.Collectors;
  * @create: 2024年12月03日 17:00
  **/
 @Configuration
-@EnableFeignClients(basePackages = "org.wangxiaolang.api.service")
 public class FeignConfig {
 
     /**
