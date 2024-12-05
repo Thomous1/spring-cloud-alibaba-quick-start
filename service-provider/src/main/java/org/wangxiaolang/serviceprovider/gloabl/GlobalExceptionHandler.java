@@ -1,5 +1,6 @@
 package org.wangxiaolang.serviceprovider.gloabl;
 
+import com.baomidou.mybatisplus.core.exceptions.MybatisPlusException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
