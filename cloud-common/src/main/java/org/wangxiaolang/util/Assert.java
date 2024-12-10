@@ -1,8 +1,9 @@
-package org.wangxiaolang.serviceprovider.util;
+package org.wangxiaolang.util;
 
-import com.baomidou.mybatisplus.core.toolkit.ArrayUtils;
-import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
-import com.baomidou.mybatisplus.core.toolkit.StringUtils;
+import org.apache.commons.collections4.CollectionUtils;
+import org.apache.commons.collections4.MapUtils;
+import org.apache.commons.lang3.ArrayUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.Collection;
 import java.util.Map;
@@ -43,11 +44,11 @@ public class Assert {
     }
 
     public static void notEmpty(Map<?, ?> map, String message, Object... params) {
-        isTrue(CollectionUtils.isNotEmpty(map), message, params);
+        isTrue(MapUtils.isNotEmpty(map), message, params);
     }
 
     public static void isEmpty(Map<?, ?> map, String message, Object... params) {
-        isTrue(CollectionUtils.isEmpty(map), message, params);
+        isTrue(MapUtils.isEmpty(map), message, params);
     }
 
     public static void notEmpty(Object[] array, String message, Object... params) {

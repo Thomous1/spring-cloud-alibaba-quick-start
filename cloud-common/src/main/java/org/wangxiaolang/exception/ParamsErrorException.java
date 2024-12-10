@@ -1,4 +1,4 @@
-package org.wangxiaolang.serviceprovider.exception;
+package org.wangxiaolang.exception;
 
 
 /**

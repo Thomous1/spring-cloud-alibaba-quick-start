@@ -1,7 +1,7 @@
-package org.wangxiaolang.serviceprovider.util;
+package org.wangxiaolang.util;
 
 
-import org.wangxiaolang.serviceprovider.exception.ParamsErrorException;
+import org.wangxiaolang.exception.ParamsErrorException;
 
 /**
  * @author wangzuoyu
