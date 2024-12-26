@@ -1,0 +1,11 @@
+# 应用服务 WEB 访问端口
+server:
+  port: 8884
+
+# 开启prometheus的endpoints
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "prometheus"
+
