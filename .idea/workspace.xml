@@ -1,13 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PropertiesComponent">{}</component>
-  <component name="RunManager" selected="Spring Boot.NacosConfigApplication (1)">
-    <configuration name="CloudGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="cloud-gateway" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.wangxiaolang.cloudgateway.CloudGatewayApplication" />
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="241862dd-e600-423b-bf14-9203f2161025" name="Changes" comment="dddd">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nacos-config/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/nacos-config/src/main/resources/application.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2pyIxWQbsHG5V5ugn1EJRx4A1kn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TestController.executor&quot;: &quot;Debug&quot;,
+    &quot;Maven.kafka-delay-message [clean].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.KafkaDelayMessageApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.NacosConfigApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.PrometheusApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/wangxiaolang/workspace/ideaProject/spring-cloud-alibaba-quick- start/kafka-delay-message/src/main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/kafka-delay-message/src/main" />
+      <recent name="$PROJECT_DIR$/cloud-common/src/main/java/org/wangxiaolang" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.KafkaDelayMessageApplication">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.wangxiaolang.serviceprovider.config.Test" />
+      <module name="service-provider" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.wangxiaolang.cloudgateway.*" />
+          <option name="PATTERN" value="org.wangxiaolang.serviceprovider.config.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -15,7 +98,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NacosConfigApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="TestController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wangxiaolang.prometheus.controller.TestController" />
+      <module name="prometheus" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wangxiaolang.prometheus.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KafkaDelayMessageApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="kafka-delay-message" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wangxiaolang.kafkadelaymessage.KafkaDelayMessageApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wangxiaolang.kafkadelaymessage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NacosConfigApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="nacos-config" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.wangxiaolang.cloud.nacos.NacosConfigApplication" />
       <extension name="coverage">
@@ -28,38 +137,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NacosConfigApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="nacos-config" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.wangxiaolang.NacosConfigApplication" />
+    <configuration name="PrometheusApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="prometheus" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wangxiaolang.prometheus.PrometheusApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.wangxiaolang.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ServiceApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="api" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.wangxiaolang.api.ServiceApiApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.wangxiaolang.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ServiceProviderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="service-provider" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.wangxiaolang.serviceprovider.ServiceProviderApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.wangxiaolang.serviceprovider.*" />
+          <option name="PATTERN" value="com.wangxiaolang.prometheus.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -69,12 +152,90 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.NacosConfigApplication (1)" />
-        <item itemvalue="Spring Boot.ServiceProviderApplication" />
-        <item itemvalue="Spring Boot.ServiceApiApplication" />
-        <item itemvalue="Spring Boot.CloudGatewayApplication" />
+        <item itemvalue="Spring Boot.KafkaDelayMessageApplication" />
         <item itemvalue="Spring Boot.NacosConfigApplication" />
+        <item itemvalue="Spring Boot.PrometheusApplication" />
+        <item itemvalue="Application.TestController" />
+        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.19416.15" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.19416.15" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="241862dd-e600-423b-bf14-9203f2161025" name="Changes" comment="" />
+      <created>1733732134296</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1733732134296</updated>
+      <workItem from="1733732135720" duration="829000" />
+      <workItem from="1733799575824" duration="68000" />
+      <workItem from="1733824139276" duration="58999000" />
+      <workItem from="1736821628977" duration="5306000" />
+      <workItem from="1737689658394" duration="5683000" />
+      <workItem from="1739266173858" duration="73000" />
+      <workItem from="1739266267770" duration="1569000" />
+      <workItem from="1742552891073" duration="4000" />
+      <workItem from="1743387331966" duration="6612000" />
+      <workItem from="1743473778865" duration="19000" />
+      <workItem from="1743490833747" duration="10641000" />
+    </task>
+    <task id="LOCAL-00001" summary="dddd">
+      <option name="closed" value="true" />
+      <created>1733824725996</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1733824725996</updated>
+    </task>
+    <task id="LOCAL-00002" summary="dddd">
+      <option name="closed" value="true" />
+      <created>1735177727089</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1735177727089</updated>
+    </task>
+    <task id="LOCAL-00003" summary="dddd">
+      <option name="closed" value="true" />
+      <created>1735633612228</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1735633612228</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="dddd" />
+    <option name="LAST_COMMIT_MESSAGE" value="dddd" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/spring_cloud_alibaba_quick__start$Test.ic" NAME="Test Coverage Results" MODIFIED="1734577035195" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>org.wangxiaolang.serviceprovider.config.*</FILTER>
+    </SUITE>
   </component>
 </project>
